@@ -28,6 +28,8 @@ if first_run:
     print("loading......")
     time.sleep(1)
     print("loaded!")
+    time.sleep(1)
+    print("tada")
 
     user_name = input("Please enter your username (this can't be reset *till now):  ")
 
