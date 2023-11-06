@@ -30,6 +30,7 @@ if first_run:
     print("loaded!")
     time.sleep(1)
     print("tada")
+    print("ok")
 
 
 
