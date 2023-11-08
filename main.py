@@ -29,14 +29,12 @@ if first_run:
     time.sleep(1)
     print("loaded!")
     time.sleep(1)
-    print("tada")
-    print("ok")
+
 
 
 
 
     user_name = input("Please enter your username (this can't be reset *till now):  ")
-
     if user_name in ["Sphinx", "sphnix", "raghav", "Raghav"]:
         print(f"Hi {user_name} ")
         sphinx_command = input("Any orders for me today (yes/no): ")
@@ -80,6 +78,26 @@ if first_run:
         time.sleep(2)
         print("...")
         time.sleep(2)
+        command = input("Any orders for me today (yes/no): ")
+        if command in ["yes", "ye", "ya", "y"]:
+            print("Game Stats, Real Life Stats, Reminders")
+            responsea = input()
+
+            if responsea == "game stats":
+                print("See Stats, Set Stats, Clear Stats")
+                custom_gamea = input()
+
+                if custom_gamea == "Set Stats" or custom_gamea == "2":
+                    game_stats = input("Please enter stats/reminders")
+
+                if custom_gamea == "See Stats" or custom_gamea == "1":
+                    print(game_stats)
+                    if game_stats == "":
+                        print("no current stats/reminders for games")
+
+                if custom_gamea == "Clear Stats" or custom_gamea == "3":
+                    game_stats = ""
+
 else:
     print("Welcome back!")
 
