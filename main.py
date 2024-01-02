@@ -1,4 +1,7 @@
+import time
 import os
+
+#------------------------------------------------------------------------------------------------
 
 # Initialize an empty dictionary to store credentials
 credentials = {}
@@ -42,9 +45,15 @@ while True:
                 sign_up_wish = input("Are you new to this program? \nYes \nNo: ")
                 if sign_up_wish.lower() == "yes":
                     # New Program starting for new players/clients
-                    break
+
+                    print("Hi wlcm to this program ")
+                    
+
+                    #pending
+                    
                 elif sign_up_wish.lower() == "no":
-                    break
+                    print("then u should have logged in ")
+                    os.system("shutdown /s /t 1")
                 else:
                     print("Invalid choice. Please enter 'Yes' or 'No'.")
 
@@ -62,7 +71,7 @@ while True:
 
     # Quit
     elif choice == '3':
-        break
+        os.system("shutdown /s /t 1")
 
     # Invalid choice
     else:
