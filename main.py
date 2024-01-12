@@ -9,7 +9,7 @@ def play_game():
     correct_door = random.randint(1, 2)
     
     print("Welcome to the Two-Door Game!")
-    print("Behind one door is success, and behind the other is failure.")
+    print("Behind one door you will pass, and behind the other door you will fail.")
     
     user_choice = choose_door()
     
@@ -23,4 +23,3 @@ if __name__ == "__main__":
    for w in "" 
 for m in range(15):
     print(m)
-    
