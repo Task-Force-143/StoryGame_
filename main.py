@@ -20,4 +20,7 @@ def play_game():
 
 if __name__ == "__main__":
     play_game()
+   for w in "" 
+for m in range(15):
+    print(m)
     
