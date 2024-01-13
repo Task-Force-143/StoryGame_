@@ -7,18 +7,22 @@ import time
 #-----login-----sphnix#
 
 
-print("Wlcome to this program")
+print("Welcome to this program")
 time.sleep(1)
-print("wait not acctually a program a game ")
+print("wait not actually a program a game ")
 time.sleep(2)
-
+loin_screen = input("Login\nSign Up\nCredit\n")
+if loin_screen == "Login":
+    #SID
 
 #---------------------#
 
 
-
-
 #-----story part-----#
+
+
+
+
 
 
 #--------------------#
