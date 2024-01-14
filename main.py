@@ -26,7 +26,17 @@ if loin_screen == "Login":
     else:
         print("Wrong Password")
 elif loin_screen == "Sign Up":
-    print("SID")
+    sign_us = input("Username: ")
+    sign_pas = input("Password: ")
+
+    registered_users[sign_us] = sign_us
+
+elif loin_screen == "Credits":
+    print("CID")
+
+else:
+    print("idk wht u trying to write am program dum")
+
 
 
 #---------------------#
