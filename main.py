@@ -4,55 +4,39 @@ import datetime
 import time
 #----------------------
 
-#-----login-----sphnix#
+#-----login-----sphinx#  
 
-
-registered_users = {"user1" : "password1", "user2": "password2"}
+registered_users = {"user1": "password1", "user2": "password2"}
 
 print("Welcome to this program")
 time.sleep(1)
-print("wait not actually a program a game ")
+print("Wait, not actually a program but a game.")
 time.sleep(2)
 
-loin_screen = input("Login\nSign Up\nCredit\n")
+login_screen = input("Login\nSign Up\nCredits\n")  
 
-if loin_screen == "Login":
+if login_screen == "Login":
     login_us = input("Username: ")
     login_pas = input("Password: ")
 
-    if login_us in registered_users and registered_users[login_us]:
+    if login_us in registered_users and registered_users[login_us] == login_pas:  
         print("Login Successful")
 
     else:
         print("Wrong Password")
-elif loin_screen == "Sign Up":
+
+elif login_screen == "Sign Up":  #
     sign_us = input("Username: ")
     sign_pas = input("Password: ")
+    registered_users[sign_us] = sign_pas  
+    print("Registration Successful")  
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-if __name__ == "__main__":
-     play_game()   
-=======
->>>>>>> 22672c801e924f3344a8843531b1078fc3269bcf
-=======
-    registered_users[sign_us] = sign_us
->>>>>>> fd2eb34771bac8d1d5f05911964951da532f5582
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-elif loin_screen == "Credits":
+elif login_screen == "Credits":
     print("CID")
 
 else:
-    print("idk wht u trying to write am program dum")
+    print("I don't know what you're trying to write. I am just a program, dumb.")
 
-
-
->>>>>>> fd2eb34771bac8d1d5f05911964951da532f5582
 #---------------------#
 
 
@@ -65,8 +49,3 @@ if door_choice == '1':
     print("Beyond Door 1: The moment you step through Door 1, you find yourself in a vast chamber filled with glittering treasures. Jewels of every color imaginable, golden statues, and chests overflowing with coins surround you. You're in a room fit for a king. However, as you start exploring, you hear a low growl. A guardian creature, part lion, part eagle, emerges from the shadows. It eyes you suspiciously. Now you must decide whether to face the guardian or make a hasty retreat.")
 elif door_choice == '2':
     print("Beyond Door 2: Upon entering through Door 2, you find yourself in a magical garden bathed in a soft, otherworldly light. Colorful flowers of every shape and size bloom around you, and butterflies flutter in the air. In the center of the garden, a majestic unicorn grazes peacefully. The unicorn raises its head, acknowledging your presence. It begins to speak, revealing that it can answer one question about your future. You must carefully choose your question, as the unicorn's insight could shape your destiny.")
-
-
-
-#--------------------#
->>>>>>> 22672c801e924f3344a8843531b1078fc3269bc
