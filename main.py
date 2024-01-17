@@ -97,3 +97,20 @@ elif guardian_decision.lower() == 'task':
 
 else:
     print("Invalid choice. The guardian is unimpressed, and the adventure ends here.")
+    import time
+print("Stage 4: Enchanted Path (Door 2):")
+print("Your question to the unicorn leads to an enchanted path. As you walk, the surroundings transform, presenting you with visions of possible futures.")
+print("Choose wisely, as your decisions here may impact your journey.")
+
+time.sleep(3)
+decision = input("You come across a crossroads. Do you want to go left or right? (Type 'left' or 'right'): ")
+
+if decision.lower() == 'left':
+    print("You chose the left path. The air shimmers, and you feel a sense of tranquility as you continue on your journey.")
+
+elif decision.lower() == 'right':
+    print("You chose the right path. The surroundings become more mysterious, and you sense a hidden power in the air and your adventure ends here.")
+    # Add more story or challenges for the right path if needed
+
+else:
+    print("Invalid choice. The path becomes unclear, and you find yourself lost in the enchantment and your adventure ends here.")
