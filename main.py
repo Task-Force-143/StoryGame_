@@ -61,3 +61,39 @@ elif door_choice == '2':
     time.sleep(2)
     print("Beyond Door 2: Upon entering through Door 2, you find yourself in a magical garden bathed in a soft, otherworldly light. Colorful flowers of every shape and size bloom around you, and butterflies flutter in the air. In the center of the garden, a majestic unicorn grazes peacefully. The unicorn raises its head, acknowledging your presence. It begins to speak, revealing that it can answer one question about your future. You must carefully choose your question, as the unicorn's insight could shape your destiny.")
     time.sleep(3)
+import time
+
+time.sleep(4)
+guardian_decision = input("The guardian challenges you to prove your worthiness. Solve a riddle or perform a task to gain access to even greater treasures hidden within the room. Do you want to solve a riddle or perform a task? (Type 'riddle' or 'task'): ")
+
+if guardian_decision.lower() == 'riddle':
+    print("The guardian presents you with a riddle: 'I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?'")
+    time.sleep(3)
+    answer = input("Your answer: ")
+
+    if answer.lower() == 'an echo':
+        print("Correct! The guardian nods in approval, and a hidden door opens to reveal even greater treasures.")
+    else:
+        print("Incorrect!the guardian is unimpressed, and the adventure ends here .")
+
+elif guardian_decision.lower() == 'task':
+    print("The guardian tasks you with arranging a set of enchanted crystals in a specific pattern.")
+    time.sleep(3)
+    print("You see three crystals of different colors: red, blue, and green.")
+    time.sleep(3)
+    print("Arrange them in the correct order to unlock the hidden door.")
+    time.sleep(3)
+
+    # Ask the player to input their arrangement
+    arrangement = input("Enter the order of colors (e.g., 'red blue green'): ")
+    time.sleep(3)
+
+    # Check if the arrangement is correct
+    correct_arrangement = 'red blue green'
+    if arrangement.lower() == correct_arrangement:
+        print("Well done! The guardian is pleased, and a hidden door opens to reveal even greater treasures.")
+    else:
+        print("Incorrect arrangement! The guardian is unimpressed, and the adventure ends here.")
+
+else:
+    print("Invalid choice. The guardian is unimpressed, and the adventure ends here.")
