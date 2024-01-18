@@ -114,3 +114,4 @@ elif decision.lower() == 'right':
 
 else:
     print("Invalid choice. The path becomes unclear, and you find yourself lost in the enchantment and your adventure ends here.")
+    print("idk)
